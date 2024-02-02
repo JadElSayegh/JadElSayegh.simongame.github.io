@@ -20,7 +20,7 @@ $(document).on("click", function(){
     if(!started){
          var display = $(".menu-mobile").css("display");
         if (display == "none") {
-            started = true;
+            started = false;
         } else {
             $("#level-title").text("Level " + level);
     nextSequence();
