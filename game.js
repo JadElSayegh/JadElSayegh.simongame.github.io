@@ -16,20 +16,6 @@ $(document).on("keydown", function(){
     }
 });
 
-$(document).on("click", function(){
-    if(!started){
-         var display = $(".menu-mobile").css("display");
-        if (display == "none") {
-            started = false;
-        } else {
-            $("#level-title").text("Level " + level);
-    nextSequence();
-       started = true;
-        }
-    
-    }
-});
-
 //Detect button clicks
 $(".btn").on("click", function () {
   var userChosenColour = this.id;
