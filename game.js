@@ -15,6 +15,14 @@ $(document).on("keydown", function(){
        started = true;
     }
 });
+$(".start").on("click", function(){
+  if(!started){
+  $("#level-title").text("Level " + level);
+  nextSequence();
+     started = true;
+  }
+});
+
 
 //Detect button clicks
 $(".btn").on("click", function () {
