@@ -18,9 +18,15 @@ $(document).on("keydown", function(){
 
 $(document).on("click", function(){
     if(!started){
-    $("#level-title").text("Level " + level);
+         var display = $(".menu-mobile").css("display");
+        if (display == "none") {
+            started = true;
+        } else {
+            $("#level-title").text("Level " + level);
     nextSequence();
        started = true;
+        }
+    
     }
 });
 
